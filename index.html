@@ -7,9 +7,9 @@
     <title>Sign-Up!</title>
     <link rel="stylesheet" href="./components/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
-</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Serif+Pro:ital,wght@1,600&display=swap" rel="stylesheet"> 
+  </head>
 <body>
     <body>
         <div class="container ">
@@ -22,39 +22,40 @@
             </div>
             <div class="b">
               <div id="black-bar">
-                <h1>Let's do this!</h1>
+                <span id="curve"><h1>Let's do this!</h1></span>
               </div>
               <div class="form">
                 <div class="input">
                   <label for="first-name" class="label">FIRST NAME:</label>
-                  <input type="text" class="input-text" name="fname" />
+                  <input type="text" class="input-text" name="first-name" required/>
                 </div>
                 <div class="input">
                   <label for="last-name" class="label">LAST NAME:</label>
-                  <input type="text" class="input-text" name="lname" />
+                  <input type="text" class="input-text" name="last-name"  required/>
                 </div>
                 <div class="input">
                   <label for="e-mail" class="label">E-MAIL:</label>
-                  <input type="text" class="input-text" name="email" />
+                  <input type="email" class="input-text" name="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
                 </div>
                 <div class="input">
                   <label for="phone-number" class="label">PHONE NUMBER:</label>
-                  <input type="text" class="input-text" name="pnumber" />
+                  <input type="text" class="input-text" name="phone-number" />
                 </div>
                 <div class="input">
                   <label for="password" class="label">PASSWORD:</label>
-                  <input type="password" class="input-text" name="password" />
+                  <input type="password" class="input-text" name="password" required minlength="6"/>
                 </div>
                 <div class="input">
                   <label for="cpassword" class="label">CONFIRM PASSWORD:</label>
-                  <input type="password" class="input-text" name="cpassword" />
+                  <input type="password" class="input-text" name="cpassword" required/>
                 </div>
               </div>
             </div>
             <div class="c">
               <div class="buttons">
-                <button type="submit" class="cancel-btn">Cancel</button>
-                <button type="button" class="crt-btn">Sign-up!</button>
+                <button type="submit" id="submit" class="crt-btn">Sign-up!</button>
+                <button type="button" class="cancel-btn">Cancel</button>
+                
               </div>
               
               <div id="log-in">
